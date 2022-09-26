@@ -4,7 +4,8 @@
         <name>John Doe</name>
         <house>H# 38</house>
         <road>R#3</road>
-        <area>Banani, Dhaka</area>
+        <area>Banani</area>
+        <city>Dhaka</city>
         <department>Sales</department>
         <salary>$20000</salary>
     </employee>
@@ -13,7 +14,8 @@
         <name>Mark Zuckerberg</name>
         <house>Flat# A/1, H# 20</house>
         <road>R#18</road>
-        <area>Mirpur, Dhaka</area>
+        <area>Mirpur</area>
+        <city>Dhaka</city>
         <department>Accounts</department>
         <salary>$12000</salary>
     </employee>
@@ -22,7 +24,8 @@
         <name>Ala Voski</name>
         <house>H# 38</house>
         <road>R#3</road>
-        <area> Motijheel</area>
+        <area>Motijheel</area>
+        <city></city>
         <department>Human Resource</department>
         <salary>$30000</salary>
     </employee>

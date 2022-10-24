@@ -1,12 +1,3 @@
-<?php
-session_start();
-if (!isset($_SESSION['status']))
-{
-    header('location: index.html');
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +24,7 @@ if (!isset($_SESSION['status']))
                 <h1>Account</h1><hr>
                 <ul>
                     <li>
-                        <a href="">Dashboard</a>
+                        <a href="dashboard.php">Dashboard</a>
                     </li>
                     <li>
                         <a href="">View Profile</a>

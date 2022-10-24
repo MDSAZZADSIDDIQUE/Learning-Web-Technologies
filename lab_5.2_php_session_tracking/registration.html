@@ -18,8 +18,8 @@
             </td>
         </tr>
         <tr height="250px">
-            <td>
-                <form action="registration.php" style="display: inline-block; text-align: center;" >
+            <td style="text-align: center;">
+                <form action="registration.php" style="display: inline-block;" method="post">
                     <fieldset style="text-align: left;">
                         <legend><h1>Registration</h1></legend>
                         <label for="name">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label>
@@ -38,11 +38,11 @@
                         <hr>
                         <fieldset>
                             <legend>Gender</legend>
-                            <input type="radio" id="male"></input>
+                            <input type="radio" id="male" name="gender" value="Male"></input>
                             <label for="male">Male</label>
-                            <input type="radio" id="male"></input>
+                            <input type="radio" id="female" name="gender" value="Female"></input>
                             <label for="female">Female</label>
-                            <input type="radio" id="other"></input>
+                            <input type="radio" id="other" name="gender" value="Other"></input>
                             <label for="other">Other</label>
                         </fieldset>
                         <fieldset>
@@ -59,6 +59,8 @@
                         <button type="reset">Reset</button>
                     </fieldset>
                 </form>
+                <br>
+                <br>
             </td>
         </tr>
         <tr>

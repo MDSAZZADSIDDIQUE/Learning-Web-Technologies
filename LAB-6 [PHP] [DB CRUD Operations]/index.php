@@ -9,7 +9,7 @@
     }
 </style>
 <body>
-    <form action="">
+    <form action="add_product.php" method="POST">
         <fieldset>
             <legend><h1>ADD PRODUCT</h1></legend>
             <label for="name">Name</label>

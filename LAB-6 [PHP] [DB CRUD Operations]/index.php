@@ -32,7 +32,7 @@
             <br>
             <hr>
             <br>
-            <input type="checkbox" name="display" id="display">
+            <input type="checkbox" name="display" id="display" value="display">
             <label for="display">Display</label>
             <br>
             <br>

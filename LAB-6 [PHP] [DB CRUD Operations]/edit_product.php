@@ -9,6 +9,7 @@ while ($productInformation = mysqli_fetch_array($productsInformation)) {
     if ($productInformation[0] == $name) {
         $buyingPrice = $productInformation[1];
         $sellingPrice = $productInformation[2];
+        $displayable = $productInformation[3];
     }
 }
 ?>
@@ -47,7 +48,13 @@ while ($productInformation = mysqli_fetch_array($productsInformation)) {
             <br>
             <hr>
             <br>
-            <input type="checkbox" name="display" id="display">
+            <input type="checkbox" name="display" id="display" value="display"
+            <?php
+            if ($displayable == 'Yes') {
+                echo "checked";
+            }
+            ?>
+            >
             <label for="display">Display</label>
             <br>
             <br>

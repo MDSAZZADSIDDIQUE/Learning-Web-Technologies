@@ -25,7 +25,7 @@ while ($productInformation = mysqli_fetch_array($productsInformation)) {
     }
 </style>
 <body>
-    <form action="editing_product.php" method="POST">
+    <form action="deleting_product.php" method="POST">
         <fieldset>
             <legend><h1>DELETE PRODUCT</h1></legend>
             <?php

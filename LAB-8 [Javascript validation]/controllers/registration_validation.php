@@ -18,7 +18,45 @@ $emailAddress = $_POST['emailAddress'];
 $password = $_POST['password'];
 $confirmPassword = $_POST['confirmPassword'];
 $invalidInput = false;
+?>
 
+<script>
+    let firstName = <?php echo $firstName ?>;
+    let lastName = <?php echo $lastName ?>;
+    let gender = <?php echo $gender ?>;
+    let dateOfBirth = <?php echo $dateOfBirth ?>;
+    let emailAddress = <?php echo $emailAddress ?>;
+    let password = <?php echo $password ?>;
+    let confirmPassword = <?php echo $confirmPassword ?>;
+    let invalidInput = false;
+
+    if (typeof firstName === 'string' && firstName.length === 0) {
+        invalidInput = true;
+    }
+    if (typeof lastName === 'string' && lastName.length === 0) {
+        invalidInput = true;
+    }
+    if (typeof gender === 'string' && gender.length === 0) {
+        invalidInput = true;
+    }
+    if (typeof dateOfBirth === 'string' && dateOfBirth.length === 0) {
+        invalidInput = true;
+    }
+    if (typeof emailAddress === 'string' && emailAddress.length === 0) {
+        invalidInput = true;
+    }
+    if (typeof password === 'string' && password.length === 0) {
+        invalidInput = true;
+    }
+    if (password.length < 6) {
+        invalidInput = true;
+    }
+    if (password !== confirmPassword) {
+        invalidInput = true;
+    }
+</script>
+
+<?
 $_SESSION['firstName'] = $firstName;
 $_SESSION['lastName'] = $lastName;
 $_SESSION['gender'] = $gender;

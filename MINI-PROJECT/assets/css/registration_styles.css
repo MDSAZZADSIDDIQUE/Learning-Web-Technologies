@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+}
+
+fieldset {
+    display: inline-block;
+}
+
+hr {
+    margin: 1vh 0;
+}

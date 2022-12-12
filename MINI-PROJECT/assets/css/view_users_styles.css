@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+
+}
+
+.viewUsers {
+    width: 50%;
+}
